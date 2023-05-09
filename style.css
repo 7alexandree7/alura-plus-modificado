@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    border: none;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --branco-principal: #ffffff;
+    --cinza-secundario: #c0c0c0;
+    --botao-azul: #399aa0;
+    --cor-de-fundo-preto: #00030c;
+    --fonte-principal:  'Inter';
+    --botao-azul-efeito: #3c92fa;
+}
+
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-35px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+
+body {
+    font-size: 2.6rem;
+    background-color: var(--cor-de-fundo-preto);
+    color:var(--branco-principal);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+ /* ---------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+.container-flex {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+}
+
+
+.imagem__banner {
+    background-image: url(./img/stingrays-3966533_1280.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+    width: 50%;
+}
+
+.conteudo__box__principal {
+    width: 50%;
+    padding: 3rem;
+}
+
+.img__box {
+    margin: 9rem 0;
+    width: 100%;
+}
+
+.img__container__principal {
+
+    margin-bottom: 1.4rem;
+    width: 250px;
+    cursor: pointer;
+    transform: translateY(0px);
+    animation: float 5s ease-in-out infinite;
+
+}
+
+.link__blue {
+    text-align: center;
+    text-decoration: none;
+    color: var(--branco-principal);
+    font-weight: 400;
+    background-color: var(--botao-azul);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-bottom: 5rem;
+    transition: 1s;
+}
+
+
+
+
+.border__blue {
+    text-align: center;
+    text-decoration: none;
+    color: var(--branco-principal);
+    font-weight: 400;
+    border: 1px solid var(--botao-azul);
+    padding: 1rem; 
+    border-radius: 1rem;
+    transition: 0.8s;
+}
+
+
+
+.titulo__principal {
+    font-size: 3.6rem;
+    font-weight: 400;
+    color:var(--branco-principal);
+    text-justify: auto;
+}
+
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------*/
+
+
+.container-grind {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100vh;
+}
+
+.secundario {
+    margin: 0 9rem;
+    align-items: center;
+}
+
+.box__conteudo__grind {
+    padding: 2rem;
+}
+
+
+.secundario__img {
+    width: 60%;
+    transform: translateY(0px);
+    animation: float 5s ease-in-out infinite;
+}
+
+
+.titulo__secundario {
+    font-size: 4rem;
+    font-weight: 600;
+    color:var(--branco-principal);
+    margin-bottom: 2rem;
+}
+
+.p__content {
+    color: var(--cinza-secundario);
+    font-size: 1.8rem;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------*/
+
+
+.link__blue__secundario {
+    display: inline-block;
+    background-color: #5d52d7;
+    margin-top: 2rem;
+    color: var(--branco-principal);
+    text-decoration: none;
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.margem__right {
+    margin-right: 15rem;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------*/
+
+.crystal {
+    background-color: #2198ed
+}
+
+.dimond {
+    background-color: #7e7a8b;
+}
+
+.dimond__blue {
+    background-color: #17afdd;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------*/
+
+.flex__dispositivos {
+    text-align: center;
+}
+
+.list__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6rem 0;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------*/
+
+.rodape {
+    margin-bottom: 5rem ;
+    text-align: center;
+}
+
+a.link__rodape {
+    text-decoration: none;
+    color: var(--branco-principal);
+    font-weight: 400;
+    font-size: 1.9rem;
+}
+
+
+a.link__rodape:hover{
+    text-decoration: underline;
+    color: var(--botao-azul);
+}
+
+.list__box__footer {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 5rem ;
+}
+
+.dd {
+    margin-bottom: 5rem ;
+    font-size: 1.4rem;
+}
+
+
+
+
+
+
